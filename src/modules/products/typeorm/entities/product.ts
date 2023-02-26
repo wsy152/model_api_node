@@ -1,6 +1,6 @@
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 
-@Entity('produts')
+@Entity('products')
 class Product {
   @PrimaryGeneratedColumn('increment')
   id:string;
@@ -18,6 +18,7 @@ class Product {
   createdAt:Date;
 
   @UpdateDateColumn()
-  updateAt:Date;
+  updatedAt:Date;
 }
 export default Product;
+
